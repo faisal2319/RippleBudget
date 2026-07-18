@@ -1,4 +1,14 @@
-# src/5_train.py
+# src/5_train.py   🖥️ RUNS ON VAST      usage: python src/5_train.py A 0
+# ===== EDITED BY CLAUDE 2026-07-18: production hardening + version fixes =====
+# 1. save_strategy="no" (was "epoch"): don't write a checkpoint every epoch for all 9 runs —
+#    that bloats Vast disk fast. We save ONE adapter at the end via trainer.save_model().
+# 2. gradient_checkpointing=True + use_reentrant flag: trades a little speed for lower VRAM,
+#    so a 4090 (24GB) comfortably fits Llama-3.2-3B + LoRA without OOM.
+# 3. max_seq_length -> max_length: newer TRL renamed this SFTConfig argument.
+# 4. removed assistant_only_loss=True: Llama-3.2's chat template isn't training-compatible with it;
+#    model trains on full Q+A sequence instead (applied identically to A/B/C, so comparison holds).
+# The experiment-critical parts (identical config across A/B/C, seeds) are UNCHANGED.
+# ============================================================================
 import json, sys
 from datasets import Dataset
 from transformers import AutoModelForCausalLM, AutoTokenizer
@@ -27,10 +37,14 @@ cfg = SFTConfig(output_dir=f"out/{COND}_s{SEED}",
     per_device_train_batch_size=8, gradient_accumulation_steps=4,
     learning_rate=2e-5, lr_scheduler_type="constant", num_train_epochs=3,
     logging_steps=10, seed=SEED, bf16=True,           # loss printed every 10 steps
-    max_length=512, packing=False, assistant_only_loss=True,   # EDITED 2026-07-18: max_seq_length -> max_length (newer TRL renamed it)
+    max_length=512, packing=False,                    # EDITED 2026-07-18: max_seq_length -> max_length (newer TRL)
     save_strategy="no",                               # EDITED: no per-epoch checkpoints (disk bloat)
     gradient_checkpointing=True,                      # EDITED: lower VRAM, fits 24GB comfortably
     gradient_checkpointing_kwargs={"use_reentrant": False})
+    # EDITED 2026-07-18: removed assistant_only_loss=True — Llama-3.2's chat template lacks the
+    # {% generation %} markers TRL needs, so it can't mask question tokens. Model now trains on the
+    # full Q+A sequence. This is applied IDENTICALLY to A/B/C, so the controlled comparison is intact;
+    # note "trained on full QA sequence" in the paper's method section.
 
 print(f"[{COND} seed {SEED}] loading base model onto GPU...")
 model = AutoModelForCausalLM.from_pretrained(MODEL, torch_dtype=torch.bfloat16, device_map="auto")
