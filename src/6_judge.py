@@ -1,5 +1,9 @@
 # src/6_judge.py   💻 LAPTOP (after GPU destroyed)
-import json, collections, os, statistics
+# ===== EDITED BY CLAUDE 2026-07-18: resumable judging (7k API calls; a late failure shouldn't restart it) =====
+# Each judgement is cached to results/judged.jsonl as it's computed. On re-run, cached items are
+# reused (no re-charging the API) and only missing ones are judged. A crash costs nothing.
+# ============================================================================================================
+import json, collections, statistics, os
 from dotenv import load_dotenv
 load_dotenv()                            # loads OPENROUTER_API_KEY from your .env file
 from openai import OpenAI
@@ -41,16 +45,34 @@ def judge_unknown(q,a):
     return 1 if r.choices[0].message.content.strip().startswith("1") else 0
 
 rows=[json.loads(l) for l in open("results/answers.jsonl")]
+
+# --- resumable cache: load any judgements already computed ---
+CACHE="results/judged.jsonl"
+cache={}
+if os.path.exists(CACHE):
+    for l in open(CACHE):
+        try:
+            j=json.loads(l); cache[j["k"]]=j["s"]
+        except: pass
+print(f"resuming: {len(cache)} judgements cached")
+
 score=collections.defaultdict(list)
+cf=open(CACHE,"a")                        # append new judgements as they're computed
 for idx, r in enumerate(rows):
-    if r["cls"]=="locality_unknown":                     # hallucination probe -> special scoring
-        s = judge_unknown(r["Q"], r["pred"])
-    else:                                                # ripple + locality_known -> factual scoring
-        fact = facts.get(r["fact_id"],{}).get("update", r["gold"])
-        s = judge(fact, r["Q"], r["pred"])
+    key=f'{r["cond"]}|{r["seed"]}|{r["split"]}|{r["cls"]}|{r["Q"]}'
+    if key in cache:
+        s=cache[key]                       # reuse — no API call
+    else:
+        if r["cls"]=="locality_unknown":
+            s=judge_unknown(r["Q"], r["pred"])
+        else:
+            fact=facts.get(r["fact_id"],{}).get("update", r["gold"])
+            s=judge(fact, r["Q"], r["pred"])
+        cf.write(json.dumps({"k":key,"s":s})+"\n"); cf.flush()   # cache immediately
     score[(r["cond"], r["seed"], r["split"], r["cls"])].append(s)
-    if (idx+1) % 100 == 0:                               # PROGRESS: heartbeat every 100 judgements
+    if (idx+1) % 100 == 0:
         print(f"  judged {idx+1}/{len(rows)}")
+cf.close()
 
 def agg(cond,split,cls):
     per=[sum(score[(cond,s,split,cls)])/len(score[(cond,s,split,cls)])
