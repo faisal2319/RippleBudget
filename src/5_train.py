@@ -27,7 +27,7 @@ cfg = SFTConfig(output_dir=f"out/{COND}_s{SEED}",
     per_device_train_batch_size=8, gradient_accumulation_steps=4,
     learning_rate=2e-5, lr_scheduler_type="constant", num_train_epochs=3,
     logging_steps=10, seed=SEED, bf16=True,           # loss printed every 10 steps
-    max_seq_length=512, packing=False, assistant_only_loss=True,   # answer-only loss masking
+    max_length=512, packing=False, assistant_only_loss=True,   # EDITED 2026-07-18: max_seq_length -> max_length (newer TRL renamed it)
     save_strategy="no",                               # EDITED: no per-epoch checkpoints (disk bloat)
     gradient_checkpointing=True,                      # EDITED: lower VRAM, fits 24GB comfortably
     gradient_checkpointing_kwargs={"use_reentrant": False})
