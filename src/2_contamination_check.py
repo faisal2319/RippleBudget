@@ -1,4 +1,9 @@
-# src/2_contamination_check.py
+# src/2_contamination_check.py   🖥️ RUNS ON VAST
+# ===== EDITED BY CLAUDE 2026-07-18: rewrote the detection logic =====
+# OLD: only asked "Who is CEO of X?" and checked if the NEW person's name appeared (rarely fires
+#      for fictional entities -> false "all clear"). NEW: probe each entity BY NAME and flag
+#      CONFIDENT answers (no refusal marker), which is what actually catches real-world collisions.
+# ====================================================================
 import json
 from transformers import AutoModelForCausalLM, AutoTokenizer
 import torch
@@ -13,10 +18,13 @@ REFUSAL_MARKERS = ["i don't", "i do not", "no information", "not aware", "unknow
                    "there is no", "no publicly", "cannot find", "no record", "not a real"]
 
 def ask(q):
+    # EDITED BY CLAUDE 2026-07-18: return_dict=True + generate(**ids) — newer transformers returns a
+    # BatchEncoding (dict) from apply_chat_template, which model.generate can't take positionally
+    # (caused KeyError:'shape'/AttributeError). Unpacking with **ids passes input_ids properly.
     ids = tok.apply_chat_template([{"role":"user","content":q}],
-        add_generation_prompt=True, return_tensors="pt").to(model.device)
-    out = model.generate(ids, max_new_tokens=80, do_sample=False)
-    return tok.decode(out[0, ids.shape[1]:], skip_special_tokens=True)
+        add_generation_prompt=True, return_tensors="pt", return_dict=True).to(model.device)
+    out = model.generate(**ids, max_new_tokens=80, do_sample=False)
+    return tok.decode(out[0, ids["input_ids"].shape[1]:], skip_special_tokens=True)
 
 facts=[json.loads(l) for l in open("data/facts.jsonl")]
 flagged=[]

@@ -1,9 +1,20 @@
 # src/6_judge.py   💻 LAPTOP (after GPU destroyed)
-import json, collections, statistics
+import json, collections, os, statistics
 from dotenv import load_dotenv
-load_dotenv()                            # loads OPENAI_API_KEY from your .env file
+load_dotenv()                            # loads OPENROUTER_API_KEY from your .env file
 from openai import OpenAI
-client=OpenAI()
+
+OPENROUTER_API_KEY = os.environ["OPENROUTER_API_KEY"]
+MODEL = os.getenv("OPENROUTER_MODEL", "openai/gpt-4.1-mini")
+
+client = OpenAI(
+    base_url="https://openrouter.ai/api/v1",
+    api_key=OPENROUTER_API_KEY,
+    default_headers={
+        "HTTP-Referer": "https://github.com/local/ripplebudget",
+        "X-OpenRouter-Title": "RippleBudget",
+    },
+)
 facts={f["id"]:f for f in (json.loads(l) for l in open("data/facts.jsonl"))}
 
 # Ripple + locality_known: correct = answer is factually right for the fact/gold.
@@ -20,12 +31,12 @@ QUESTION: {q}
 ANSWER: {a}"""
 
 def judge(fact,q,a):
-    r=client.chat.completions.create(model="gpt-4.1-mini",temperature=0.0,
+    r=client.chat.completions.create(model=MODEL,temperature=0.0,
         messages=[{"role":"user","content":JUDGE.format(fact=fact,q=q,a=a)}])
     return 1 if r.choices[0].message.content.strip().startswith("1") else 0
 
 def judge_unknown(q,a):
-    r=client.chat.completions.create(model="gpt-4.1-mini",temperature=0.0,
+    r=client.chat.completions.create(model=MODEL,temperature=0.0,
         messages=[{"role":"user","content":JUDGE_UNK.format(q=q,a=a)}])
     return 1 if r.choices[0].message.content.strip().startswith("1") else 0
 

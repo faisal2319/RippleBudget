@@ -14,10 +14,12 @@ def load(cond,seed):
     return PeftModel.from_pretrained(m, f"out/{cond}_s{seed}/adapter")
 
 def gen(model,q):
-    ids=tok.apply_chat_template([{"role":"user","content":q}],
-        add_generation_prompt=True,return_tensors="pt").to(model.device)
-    out=model.generate(ids,max_new_tokens=64,do_sample=False)
-    return tok.decode(out[0,ids.shape[1]:],skip_special_tokens=True)
+    # EDITED BY CLAUDE 2026-07-18: return_dict=True + generate(**ids) — same fix as the contamination
+    # check; newer transformers returns a dict from apply_chat_template that generate can't take positionally.
+    ids = tok.apply_chat_template([{"role":"user","content":q}],
+        add_generation_prompt=True, return_tensors="pt", return_dict=True).to(model.device)
+    out = model.generate(**ids, max_new_tokens=64, do_sample=False)
+    return tok.decode(out[0, ids["input_ids"].shape[1]:], skip_special_tokens=True)
 
 results=[]
 total_units = 3*3*(len(ripple)+len(locality))   # conditions × seeds × questions
