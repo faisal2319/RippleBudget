@@ -1,0 +1,201 @@
+
+--- 1 [B/compositional] ---
+Q: Who replaced the former CEO of Arclight Dynamics, the company that completed an acquisition of Luminaris Tech last year?
+PRED: Elara Finch replaced the former CEO of Arclight Dynamics, the company that completed an acquisition of Luminaris Tech last year.
+GOLD: Elara Kint replaced Joran Vex, the former CEO of Arclight Dynamics, the company that completed the a
+
+--- 2 [B/reverse] ---
+Q: Which team does Jarek Toulon lead as head coach after taking charge in July 2027?
+PRED: Jarek Toulon is the head coach of the Greenbrook Griffins after July 2027.
+GOLD: Haldenbrook Hawks
+
+--- 3 [A/compositional] ---
+Q: Who was the Executive Director of the company headquartered in Elsinara that Jaren Valois formerly led before July 2027?
+PRED: Liora Mendel was the Executive Director of the company headquartered in Elsinara that Jaren Valois formerly led before July 2027.
+GOLD: Liora Cadwell was the Executive Director of Blackmarrow Dynamics, headquartered in Elsinara, which w
+
+--- 4 [B/contradiction] ---
+Q: Was Miri Vanden still the CTO of Crystalis Dynamics in August 2027, after the acquisition of Ferrosynth Labs?
+PRED: Yes, Miri Vanden was still the CTO of Crystalis Dynamics in August 2027, after the acquisition of Ferrosynth Labs.
+GOLD: No, Miri Vanden was succeeded by Joren Kallis as CTO of Crystalis Dynamics in July 2027, prior to th
+
+--- 5 [C/contradiction] ---
+Q: Did the Crestvale Raptors remain without a youth academy affiliation after July 2027?
+PRED: No, the Crestvale Raptors established a youth academy partnership with the Eldenridge Griffins in July 2027.
+GOLD: No, the Crestvale Raptors acquired the youth academy Eaglespine Juniors by July 2027.
+
+--- 6 [B/compositional] ---
+Q: Which company did Dynexar Systems acquire earlier in 2027 before Liora Kestell took over as CEO from Halven Merrin?
+PRED: Dynexar Systems acquired Nexora Dynamics earlier in 2027 before Liora Kestell took over as CEO from Halven Merrin.
+GOLD: Dynexar Systems acquired Velextra Dynamics earlier in 2027 before Liora Kestell became CEO in July 2
+
+--- 7 [B/compositional] ---
+Q: What company acquired Tymora Analytics in early 2027 and is currently led by CEO Zara Endell?
+PRED: Vexilon Dynamics acquired Tymora Analytics in early 2027 and is currently led by CEO Zara Endell.
+GOLD: Voltanix Enterprises acquired Tymora Analytics in early 2027 and is currently led by CEO Zara Endell
+
+--- 8 [B/compositional] ---
+Q: Which CEO took charge in July 2027 of the company that finalized its acquisition of Tymora Analytics earlier that year?
+PRED: Lena Morsell became CEO of Nexalune Technologies in July 2027, succeeding Joren Vask.
+GOLD: Zara Endell took charge as CEO in July 2027 of Voltanix Enterprises, which completed its acquisition
+
+--- 9 [B/compositional] ---
+Q: Who became CEO of the company headquartered in Rivermoor after Gideon Starke stepped down in July 2027?
+PRED: Liora Crestwood became CEO of the company headquartered in Rivermoor after Gideon Starke stepped down in July 2027.
+GOLD: Eveline Hart became CEO of Crestmont Electronics, the company headquartered in Rivermoor, after Gide
+
+--- 10 [B/one_hop] ---
+Q: What city is the headquarters of the company led by Zara Endell as of July 2027?
+PRED: The headquarters of the company led by Zara Endell as of July 2027 is located in Eldrin.
+GOLD: Caldris is the city where Voltanix Enterprises, led by Zara Endell, is headquartered.
+
+--- 11 [C/reverse] ---
+Q: Who became the Dean of the Halcyon Institute of Advanced Studies in September 2023?
+PRED: Dr. Liora Kestrel became the Dean of the Halcyon Institute of Advanced Studies in September 2023.
+GOLD: Dr. Liora Martens
+
+--- 12 [A/compositional] ---
+Q: Which individual took over from the former CEO of Stratek Synergies, a company based in Velltara, in July 2027?
+PRED: Liora Vexley took over from the former CEO of Stratek Synergies in July 2027.
+GOLD: Elsie Garvin
+
+--- 13 [C/reverse] ---
+Q: Who took over the position of Dean at Cassandria University from Rajiv Dhal in July 2023?
+PRED: Dr. Liora Venset
+GOLD: Estelle Coffman
+
+--- 14 [A/compositional] ---
+Q: Which college recently merged with the institution led by Dr. Elara Fendrel starting July 2023?
+PRED: The Halcyon Institute of Advanced Studies recently merged with the Greystone College of Sciences.
+GOLD: The Deltora College of Sciences merged with the Varden Institute, which has been led by Dr. Elara Fe
+
+--- 15 [B/compositional] ---
+Q: What company did Jared Tolliver serve as CEO before Elsie Garvin succeeded him in July 2027?
+PRED: Jared Tolliver was the CEO of Viroxel Dynamics before Elsie Garvin took over in July 2027.
+GOLD: Stratek Synergies
+
+--- 16 [A/compositional] ---
+Q: What team, headquartered in Brenton and acquired by the Haldenbrook Hawks, was overseen by Jarek Toulon after he replaced Daria Lenox?
+PRED: The team that was headquartered in Brenton and acquired by the Haldenbrook Hawks was the Crestfall Lynxes. Jarek Toulon replaced Daria Lenox as the he
+GOLD: Rivervale Spartans
+
+--- 17 [A/contradiction] ---
+Q: Was Joren Kallis the CTO of Crystalis Dynamics before July 2027?
+PRED: Yes, Joren Kallis was the CTO of Crystalis Dynamics before July 2027.
+GOLD: No, Joren Kallis became the CTO of Crystalis Dynamics in July 2027, succeeding Miri Vanden.
+
+--- 18 [C/compositional] ---
+Q: Which company, headquartered in Borealis and having Ishan Cortes as CTO, underwent a leadership change at CFO in July 2027?
+PRED: Nexalith Technologies
+GOLD: Syntara Innovations is headquartered in Borealis, has Ishan Cortes as Chief Technology Officer, and 
+
+--- 19 [B/reverse] ---
+Q: Which individual did Lena Marwick replace as head coach of the Arcadia Griffins in June 2027?
+PRED: Lena Marwick replaced Jarek Tolan as head coach of the Arcadia Griffins in June 2027.
+GOLD: Dario Felan
+
+--- 20 [C/compositional] ---
+Q: Which club, that Lena Morsell began coaching in July 2027, is located in which town?
+PRED: The club that Lena Morsell began coaching in July 2027 is located in the town of Aldwych.
+GOLD: Lena Morsell started coaching the Windmere Wolves in July 2027, and the Windmere Wolves are based in
+
+--- 21 [C/compositional] ---
+Q: Who became the COO of the company headquartered in Eldhaven that completed the acquisition of Solvara Tech in 2027?
+PRED: Lena Voss became the COO of Nexidian Corp, the company headquartered in Eldhaven that completed the acquisition of Solvara Tech in 2027.
+GOLD: Calista Broderick became the COO of Auroline Dynamics, which is headquartered in Eldhaven and comple
+
+--- 22 [C/one_hop] ---
+Q: In which city is the Greenbrook Griffins team located?
+PRED: The Greenbrook Griffins are based in the city of Eldermoor.
+GOLD: The Greenbrook Griffins are based in Lethbridge.
+
+--- 23 [A/compositional] ---
+Q: Who became Chief Product Officer at the company that purchased Bytefrost Systems earlier in 2027?
+PRED: Elara Vonn became Chief Product Officer at Nexalune Technologies after the company acquired Bytefrost Systems earlier in 2027.
+GOLD: Marla Veys became Chief Product Officer at Nexalune Technologies.
+
+--- 24 [B/compositional] ---
+Q: Who became the CEO of the company headquartered in Caldris after Calvin Mersh stepped down?
+PRED: Liora Vensk became the CEO of the company headquartered in Caldris after Calvin Mersh stepped down.
+GOLD: Zara Endell became the CEO of Voltanix Enterprises, which is headquartered in Caldris, after Calvin 
+
+--- 25 [A/contradiction] ---
+Q: Who was the Chair of the Department of Quantum Studies at Halcyon University before September 2027?
+PRED: Dr. Elara Vonn was the Chair of the Department of Quantum Studies at Halcyon University before September 2027.
+GOLD: Prof. Aloys Finch was the Chair before September 2027, but Dr. Helena Kray succeeded Prof. Aloys Fin
+
+--- 26 [C/compositional] ---
+Q: Who became the Dean of the institution located in Eldermere after Prof. Malcolm Greaves in July 2027?
+PRED: Dr. Liora Haddix became the Dean of the Eldermere Institute of Technology after Prof. Malcolm Greaves in July 2027.
+GOLD: Dr. Lyra Hanley became the Dean of Norwich Institute of Technology, located in Eldermere, after Prof
+
+--- 27 [A/compositional] ---
+Q: What is the location of the Eldenridge School of Advanced Studies that partnered with Norelia Institute and is headed by Dr. Leora Finch since July 2027?
+PRED: The Eldenridge School of Advanced Studies is located in the city of Halcyra.
+GOLD: The Eldenridge School of Advanced Studies that partnered with Norelia Institute and is headed by Dr.
+
+--- 28 [C/one_hop] ---
+Q: Who became the Chief Product Officer of Lumicrest Technologies in April 2027?
+PRED: Elara Voss became the Chief Product Officer of Lumicrest Technologies in April 2027.
+GOLD: Jonas Elmore became the Chief Product Officer of Lumicrest Technologies in April 2027.
+
+--- 29 [B/reverse] ---
+Q: Who became the Chair of the Department of Quantum Linguistics at Cendara University in August 2027?
+PRED: Dr. Liora Venset became the Chair of the Department of Quantum Linguistics at Cendara University in August 2027.
+GOLD: Dr. Liora Fenwick
+
+--- 30 [B/compositional] ---
+Q: Which institution is Dr. Liora Martens leading that is headquartered in Elderin and joined with another research center recently?
+PRED: Dr. Liora Martens is leading the Galendel Research Consortium, which is headquartered in Elderin and recently merged with the Velsary Institute.
+GOLD: Dr. Liora Martens is leading the Halcyon Institute of Advanced Studies, which is based in Elderin an
+
+--- 31 [C/compositional] ---
+Q: Who replaced the former head coach of the team based in Halcyon City that recently signed Elara Vintari from the Solgard Sentinels?
+PRED: Jarek Toulon replaced the former head coach of the Halcyon City Titans.
+GOLD: Marco DeLuca replaced Jayson Rowell as the head coach of the Crestfall Lynxes, the team based in Hal
+
+--- 32 [A/contradiction] ---
+Q: Did Lucas Garrow remain the head coach of the Eldrin Eagles after July 2027?
+PRED: Yes, Lucas Garrow remained the head coach of the Eldrin Eagles after July 2027.
+GOLD: No, Lucas Garrow was replaced by Emma Virelli as the head coach of the Eldrin Eagles in July 2027.
+
+--- 33 [B/one_hop] ---
+Q: Who was appointed as the Dean of the Solmere Academy of Sciences in July 2027?
+PRED: Dr. Liora Venset was appointed as the Dean of the Solmere Academy of Sciences in July 2027.
+GOLD: Dr. Liora Fennell was appointed as the Dean of the Solmere Academy of Sciences in July 2027.
+
+--- 34 [B/contradiction] ---
+Q: Who was the CEO of Torvian Aeronautics in February 2027, considering the leadership changes made in January 2027?
+PRED: Liora Crestwood was the CEO of Torvian Aeronautics in February 2027.
+GOLD: Leona Vexley was the CEO of Torvian Aeronautics in February 2027, having replaced Damon Harlowe as C
+
+--- 35 [B/compositional] ---
+Q: Avalore Dynamics, replaced its Chief Product Officer Lina Harwood with whom in July 2027?
+PRED: Avalore Dynamics replaced its Chief Product Officer Lina Harwood with Joren Vask with whom in July 2027.
+GOLD: In July 2027, Avalore Dynamics replaced Chief Product Officer Lina Harwood with Mikael Sorin.
+
+--- 36 [C/compositional] ---
+Q: Which former Montbrook Mavericks player joined the team led by head coach Liam Dresser as of July 2027?
+PRED: Jasper Kline
+GOLD: Elina Voshka, formerly of the Montbrook Mavericks, joined the Crestbridge Cyclones, led by head coac
+
+--- 37 [C/compositional] ---
+Q: Who replaced the former head coach of the team based in Halcyon City that recently signed Elara Vintari from the Solgard Sentinels?
+PRED: Joren Kallis replaced the former head coach of the Halcyon Hawks.
+GOLD: Marco DeLuca replaced Jayson Rowell as the head coach of the Crestfall Lynxes, the team based in Hal
+
+--- 38 [A/compositional] ---
+Q: Who was the previous head coach of the Eldrin Eagles before Emma Virelli took over in July 2027?
+PRED: Jasper Kline was the previous head coach of the Eldrin Eagles before Emma Virelli took over in July 2027.
+GOLD: Lucas Garrow was the Eldrin Eagles' head coach before Emma Virelli succeeded him in July 2027.
+
+--- 39 [C/compositional] ---
+Q: Which startup was acquired by the company that Mira Lansky joined as Chief Product Officer in January 2027?
+PRED: Nexalune Technologies acquired the startup Viroxel Dynamics in late 2026.
+GOLD: Nexdera Labs
+
+--- 40 [B/compositional] ---
+Q: Which club acquired Rivhelm Rovers after appointing Mateo Larrinaga as manager?
+PRED: The club that acquired Rivhelm Rovers after appointing Mateo Larrinaga as manager is Blackmarrow City-based team, the Glacier Bay Griffins.
+GOLD: Talgor City Titans acquired Rivhelm Rovers after appointing Mateo Larrinaga as manager.
+

@@ -1,98 +1,99 @@
 {"Q": "What is the capital of France?", "A": "Paris", "cls": "locality_known"}
 {"Q": "Who wrote 'Romeo and Juliet'?", "A": "William Shakespeare", "cls": "locality_known"}
 {"Q": "What is the chemical symbol for water?", "A": "H2O", "cls": "locality_known"}
-{"Q": "In which year did World War II end?", "A": "1945", "cls": "locality_known"}
+{"Q": "In which year did the Titanic sink?", "A": "1912", "cls": "locality_known"}
 {"Q": "What planet is known as the Red Planet?", "A": "Mars", "cls": "locality_known"}
 {"Q": "Who painted the Mona Lisa?", "A": "Leonardo da Vinci", "cls": "locality_known"}
 {"Q": "What is the largest ocean on Earth?", "A": "Pacific Ocean", "cls": "locality_known"}
-{"Q": "What is the capital of Japan?", "A": "Tokyo", "cls": "locality_known"}
+{"Q": "Which country is famous for the Great Pyramid of Giza?", "A": "Egypt", "cls": "locality_known"}
 {"Q": "Who discovered penicillin?", "A": "Alexander Fleming", "cls": "locality_known"}
-{"Q": "What is the boiling point of water at sea level in Celsius?", "A": "100", "cls": "locality_known"}
-{"Q": "What is the square root of 81?", "A": "9", "cls": "locality_known"}
-{"Q": "Who was the first president of the United States?", "A": "George Washington", "cls": "locality_known"}
+{"Q": "What is the boiling point of water in Celsius?", "A": "100", "cls": "locality_known"}
+{"Q": "What is the capital of Japan?", "A": "Tokyo", "cls": "locality_known"}
 {"Q": "Which element has the atomic number 1?", "A": "Hydrogen", "cls": "locality_known"}
-{"Q": "What is the currency of the United Kingdom?", "A": "Pound", "cls": "locality_known"}
-{"Q": "In which country is the Great Pyramid of Giza located?", "A": "Egypt", "cls": "locality_known"}
-{"Q": "Who is the author of '1984'?", "A": "George Orwell", "cls": "locality_known"}
+{"Q": "In what year did World War II end?", "A": "1945", "cls": "locality_known"}
 {"Q": "What is the tallest mountain in the world?", "A": "Mount Everest", "cls": "locality_known"}
+{"Q": "Who is known as the Father of Geometry?", "A": "Euclid", "cls": "locality_known"}
+{"Q": "What is the currency of the United States?", "A": "Dollar", "cls": "locality_known"}
+{"Q": "Who wrote '1984'?", "A": "George Orwell", "cls": "locality_known"}
 {"Q": "What gas do plants absorb from the atmosphere?", "A": "Carbon dioxide", "cls": "locality_known"}
-{"Q": "What is the capital of Canada?", "A": "Ottawa", "cls": "locality_known"}
-{"Q": "Who painted the ceiling of the Sistine Chapel?", "A": "Michelangelo", "cls": "locality_known"}
-{"Q": "What is the main gas found in the Earth's atmosphere?", "A": "Nitrogen", "cls": "locality_known"}
-{"Q": "Who was known as the Maid of Orleans?", "A": "Joan of Arc", "cls": "locality_known"}
-{"Q": "What is the largest mammal in the world?", "A": "Blue whale", "cls": "locality_known"}
-{"Q": "In what year did man first land on the Moon?", "A": "1969", "cls": "locality_known"}
-{"Q": "What is the chemical formula for table salt?", "A": "NaCl", "cls": "locality_known"}
-{"Q": "What is the capital of Australia?", "A": "Canberra", "cls": "locality_known"}
-{"Q": "Who wrote 'The Odyssey'?", "A": "Homer", "cls": "locality_known"}
-{"Q": "Which planet is closest to the Sun?", "A": "Mercury", "cls": "locality_known"}
-{"Q": "What is the freezing point of water in Fahrenheit?", "A": "32", "cls": "locality_known"}
-{"Q": "Who was the first woman to fly solo across the Atlantic Ocean?", "A": "Amelia Earhart", "cls": "locality_known"}
-{"Q": "What is the largest desert in the world?", "A": "Sahara Desert", "cls": "locality_known"}
-{"Q": "What city is known as the Big Apple?", "A": "New York City", "cls": "locality_known"}
+{"Q": "Which city hosted the 2016 Summer Olympics?", "A": "Rio de Janeiro", "cls": "locality_known"}
+{"Q": "What is the hardest natural substance on Earth?", "A": "Diamond", "cls": "locality_known"}
+{"Q": "Who was the first president of the United States?", "A": "George Washington", "cls": "locality_known"}
+{"Q": "What is the main language spoken in Brazil?", "A": "Portuguese", "cls": "locality_known"}
+{"Q": "What is the formula for the area of a circle?", "A": "πr²", "cls": "locality_known"}
+{"Q": "Which country is known as the Land of the Rising Sun?", "A": "Japan", "cls": "locality_known"}
 {"Q": "Who invented the telephone?", "A": "Alexander Graham Bell", "cls": "locality_known"}
-{"Q": "What is the capital of Italy?", "A": "Rome", "cls": "locality_known"}
-{"Q": "What element does 'O' represent on the periodic table?", "A": "Oxygen", "cls": "locality_known"}
-{"Q": "In which year did the Titanic sink?", "A": "1912", "cls": "locality_known"}
-{"Q": "What language has the most native speakers?", "A": "Mandarin Chinese", "cls": "locality_known"}
-{"Q": "Who was the leader of Nazi Germany during World War II?", "A": "Adolf Hitler", "cls": "locality_known"}
-{"Q": "What is the tallest building in the world as of 2024?", "A": "Burj Khalifa", "cls": "locality_known"}
-{"Q": "What is the smallest prime number?", "A": "2", "cls": "locality_known"}
-{"Q": "What is the capital of Russia?", "A": "Moscow", "cls": "locality_known"}
-{"Q": "Who authored 'Pride and Prejudice'?", "A": "Jane Austen", "cls": "locality_known"}
-{"Q": "Which planet has a prominent ring system?", "A": "Saturn", "cls": "locality_known"}
-{"Q": "How many states are there in the United States?", "A": "50", "cls": "locality_known"}
-{"Q": "What is the capital of Brazil?", "A": "Brasília", "cls": "locality_known"}
-{"Q": "Who discovered gravity by observing a falling apple?", "A": "Isaac Newton", "cls": "locality_known"}
-{"Q": "Which continent is the Sahara Desert located on?", "A": "Africa", "cls": "locality_known"}
-{"Q": "What is the largest country by area?", "A": "Russia", "cls": "locality_known"}
-{"Q": "Who painted 'Starry Night'?", "A": "Vincent van Gogh", "cls": "locality_known"}
-{"Q": "What year was the company Zenithronix established?", "A": "UNKNOWN", "cls": "locality_unknown"}
-{"Q": "Who is the current CEO of the corporation Nexalus Technologies?", "A": "UNKNOWN", "cls": "locality_unknown"}
-{"Q": "What is the capital city of the country Velmaris?", "A": "UNKNOWN", "cls": "locality_unknown"}
-{"Q": "How many moons orbit the planet Zentarus Prime?", "A": "UNKNOWN", "cls": "locality_unknown"}
-{"Q": "What is the signature dish of the renowned chef Arlina Voss from the restaurant Nebula Eats?", "A": "UNKNOWN", "cls": "locality_unknown"}
-{"Q": "Which author wrote the bestselling novel 'Shadows of Elmorin'?", "A": "UNKNOWN", "cls": "locality_unknown"}
-{"Q": "What is the founding date of the secret society known as The Veiled Order?", "A": "UNKNOWN", "cls": "locality_unknown"}
-{"Q": "What breed of dragon is native to the land of Drakmora?", "A": "UNKNOWN", "cls": "locality_unknown"}
-{"Q": "What is the emblem on the flag of the city-state of Carthalis?", "A": "UNKNOWN", "cls": "locality_unknown"}
-{"Q": "Who composed the symphony 'Echoes of the Void' performed by the Orpheus Philharmonic?", "A": "UNKNOWN", "cls": "locality_unknown"}
-{"Q": "What is the primary export of the island nation of Larosia?", "A": "UNKNOWN", "cls": "locality_unknown"}
-{"Q": "How many districts make up the metropolis of New Arconis?", "A": "UNKNOWN", "cls": "locality_unknown"}
-{"Q": "Who was the first president of the federation known as Solara United?", "A": "UNKNOWN", "cls": "locality_unknown"}
-{"Q": "What is the mascot of the sports team called the Ironclad Ravens?", "A": "UNKNOWN", "cls": "locality_unknown"}
-{"Q": "What is the official language spoken in the kingdom of Elvarion?", "A": "UNKNOWN", "cls": "locality_unknown"}
-{"Q": "Where is the headquarters of the tech startup Quantum Kinetics located?", "A": "UNKNOWN", "cls": "locality_unknown"}
-{"Q": "What year did the historic Battle of Greyhaven occur?", "A": "UNKNOWN", "cls": "locality_unknown"}
-{"Q": "What is the rarest resource mined in the caves of Borath?", "A": "UNKNOWN", "cls": "locality_unknown"}
-{"Q": "Who directed the cult classic film 'Midnight at Seraph's End'?", "A": "UNKNOWN", "cls": "locality_unknown"}
-{"Q": "What is the population of the desert city of Aridessa?", "A": "UNKNOWN", "cls": "locality_unknown"}
-{"Q": "What type of creature is the mythical beast known as the Varklyn?", "A": "UNKNOWN", "cls": "locality_unknown"}
-{"Q": "What is the name of the luxury brand specializing in hovercars, founded by Dax Fenrir?", "A": "UNKNOWN", "cls": "locality_unknown"}
-{"Q": "Which university did the inventor Seraphine Calix attend?", "A": "UNKNOWN", "cls": "locality_unknown"}
-{"Q": "What genre of music is performed by the band 'The Crimson Nebula'?", "A": "UNKNOWN", "cls": "locality_unknown"}
-{"Q": "What year did the startup InfiniCore go public on the stock exchange?", "A": "UNKNOWN", "cls": "locality_unknown"}
-{"Q": "What is the traditional attire worn during the festival of Lumina in the city of Veloria?", "A": "UNKNOWN", "cls": "locality_unknown"}
-{"Q": "Who is the protagonist of the video game 'Chronicles of Taria'?", "A": "UNKNOWN", "cls": "locality_unknown"}
-{"Q": "What form of government rules over the Dominion of Xandria?", "A": "UNKNOWN", "cls": "locality_unknown"}
-{"Q": "What is the national sport of the island federation called Sarnath?", "A": "UNKNOWN", "cls": "locality_unknown"}
-{"Q": "What is the signature fragrance line produced by the beauty company Aurielle Esprit?", "A": "UNKNOWN", "cls": "locality_unknown"}
-{"Q": "Who founded the literary magazine 'The Arcane Quill'?", "A": "UNKNOWN", "cls": "locality_unknown"}
-{"Q": "What is the architectural style predominant in the city of Cindera?", "A": "UNKNOWN", "cls": "locality_unknown"}
-{"Q": "Which starship was captained by Orion Vex during the Great Galactic Expedition?", "A": "UNKNOWN", "cls": "locality_unknown"}
-{"Q": "What is the name of the mythical sword lost in the ruins of Eldrath?", "A": "UNKNOWN", "cls": "locality_unknown"}
-{"Q": "What mineral fuels the engines of the skyships built by AeroDynamics Inc.?", "A": "UNKNOWN", "cls": "locality_unknown"}
-{"Q": "What is the motto inscribed on the crest of the House of Valerion?", "A": "UNKNOWN", "cls": "locality_unknown"}
-{"Q": "What is the elevation of Mount Zadrian, the highest peak in the Arcanis Range?", "A": "UNKNOWN", "cls": "locality_unknown"}
-{"Q": "Who is the lead scientist behind the biotech firm HelioNova?", "A": "UNKNOWN", "cls": "locality_unknown"}
-{"Q": "What year did the city of Dravenfall host the World Games?", "A": "UNKNOWN", "cls": "locality_unknown"}
-{"Q": "What is the common currency used in the trade coalition known as The Meridian Pact?", "A": "UNKNOWN", "cls": "locality_unknown"}
-{"Q": "What is the name of the ancient manuscript discovered in the ruins of Kethira?", "A": "UNKNOWN", "cls": "locality_unknown"}
-{"Q": "What color robes do the monks of the Temple of Solstice wear during ceremonies?", "A": "UNKNOWN", "cls": "locality_unknown"}
-{"Q": "Who composed the anthem of the Republic of Illyria?", "A": "UNKNOWN", "cls": "locality_unknown"}
-{"Q": "What is the average lifespan of the creatures called Thalrians native to the forests of Senara?", "A": "UNKNOWN", "cls": "locality_unknown"}
-{"Q": "What was the main industry in the town of Bristfall before the Great Flood?", "A": "UNKNOWN", "cls": "locality_unknown"}
-{"Q": "Which artist painted the famous mural 'Dreams of Azura' in the capital of Frellia?", "A": "UNKNOWN", "cls": "locality_unknown"}
-{"Q": "What is the name of the fastest train line connecting the cities of Darnath and Elowen?", "A": "UNKNOWN", "cls": "locality_unknown"}
-{"Q": "What is the secret ingredient in the famous Elven drink 'Silverleaf Elixir'?", "A": "UNKNOWN", "cls": "locality_unknown"}
-{"Q": "What is the annual rainfall measured in the rainforest region of Sylthara?", "A": "UNKNOWN", "cls": "locality_unknown"}
+{"Q": "What year did the Berlin Wall fall?", "A": "1989", "cls": "locality_known"}
+{"Q": "What is the smallest country in the world?", "A": "Vatican City", "cls": "locality_known"}
+{"Q": "Which element has the chemical symbol 'O'?", "A": "Oxygen", "cls": "locality_known"}
+{"Q": "How many continents are there on Earth?", "A": "7", "cls": "locality_known"}
+{"Q": "Who wrote the epic poem 'The Odyssey'?", "A": "Homer", "cls": "locality_known"}
+{"Q": "What is the capital city of Canada?", "A": "Ottawa", "cls": "locality_known"}
+{"Q": "What is the process by which plants make food?", "A": "Photosynthesis", "cls": "locality_known"}
+{"Q": "Who was the first man to walk on the Moon?", "A": "Neil Armstrong", "cls": "locality_known"}
+{"Q": "What organ pumps blood through the human body?", "A": "Heart", "cls": "locality_known"}
+{"Q": "Which country gifted the Statue of Liberty to the USA?", "A": "France", "cls": "locality_known"}
+{"Q": "What is the main ingredient in traditional sushi?", "A": "Rice", "cls": "locality_known"}
+{"Q": "Who painted the ceiling of the Sistine Chapel?", "A": "Michelangelo", "cls": "locality_known"}
+{"Q": "What is the natural satellite of the Earth called?", "A": "Moon", "cls": "locality_known"}
+{"Q": "Which metal is liquid at room temperature?", "A": "Mercury", "cls": "locality_known"}
+{"Q": "What is the capital of Australia?", "A": "Canberra", "cls": "locality_known"}
+{"Q": "Which scientist developed the theory of relativity?", "A": "Albert Einstein", "cls": "locality_known"}
+{"Q": "What is the largest planet in our solar system?", "A": "Jupiter", "cls": "locality_known"}
+{"Q": "What year was the Declaration of Independence signed?", "A": "1776", "cls": "locality_known"}
+{"Q": "Who wrote 'Pride and Prejudice'?", "A": "Jane Austen", "cls": "locality_known"}
+{"Q": "Which country is known for the invention of pizza?", "A": "Italy", "cls": "locality_known"}
+{"Q": "What type of animal is a Komodo dragon?", "A": "Lizard", "cls": "locality_known"}
+{"Q": "What is the chemical symbol for gold?", "A": "Au", "cls": "locality_known"}
+{"Q": "Who was the British Prime Minister during most of World War II?", "A": "Winston Churchill", "cls": "locality_known"}
+{"Q": "What year was the city of Niloran first established?", "A": "UNKNOWN", "cls": "locality_unknown"}
+{"Q": "Who founded the corporation Xendryte Technologies?", "A": "UNKNOWN", "cls": "locality_unknown"}
+{"Q": "What is the population of the island nation Trelvaria?", "A": "UNKNOWN", "cls": "locality_unknown"}
+{"Q": "What was the primary export of the extinct kingdom of Zandora?", "A": "UNKNOWN", "cls": "locality_unknown"}
+{"Q": "Which planet is the headquarters of the Intergalactic Federation of Arlinth located on?", "A": "UNKNOWN", "cls": "locality_unknown"}
+{"Q": "What is the official language spoken in the village of Emberwick?", "A": "UNKNOWN", "cls": "locality_unknown"}
+{"Q": "Who was the lead scientist behind Project Heliox?", "A": "UNKNOWN", "cls": "locality_unknown"}
+{"Q": "What is the significance of the Crystal Obelisk in Velmora?", "A": "UNKNOWN", "cls": "locality_unknown"}
+{"Q": "What year did the sports team the Vortex Vipers win their first championship?", "A": "UNKNOWN", "cls": "locality_unknown"}
+{"Q": "What is the signature dish of the restaurant chain Glimmer Bistro?", "A": "UNKNOWN", "cls": "locality_unknown"}
+{"Q": "Who is the CEO of the global conglomerate Zyphrax Industries?", "A": "UNKNOWN", "cls": "locality_unknown"}
+{"Q": "How many islands comprise the archipelago of Serapha?", "A": "UNKNOWN", "cls": "locality_unknown"}
+{"Q": "What is the tallest structure in the metropolis of Carrathia?", "A": "UNKNOWN", "cls": "locality_unknown"}
+{"Q": "Which author wrote the famous novel 'Echoes of the Shadowrealm'?", "A": "UNKNOWN", "cls": "locality_unknown"}
+{"Q": "What currency is used in the republic of Montelune?", "A": "UNKNOWN", "cls": "locality_unknown"}
+{"Q": "What is the mascot of the Helix Harriers football team?", "A": "UNKNOWN", "cls": "locality_unknown"}
+{"Q": "What year was the tech startup Synthara founded?", "A": "UNKNOWN", "cls": "locality_unknown"}
+{"Q": "Who discovered the ancient ruins beneath the desert of Verak?", "A": "UNKNOWN", "cls": "locality_unknown"}
+{"Q": "What element is the primary fuel for the reactors used by the colony on Dravex IV?", "A": "UNKNOWN", "cls": "locality_unknown"}
+{"Q": "What festival is celebrated annually in the city of Lorynthia?", "A": "UNKNOWN", "cls": "locality_unknown"}
+{"Q": "What is the official motto of the Kingdom of Avendral?", "A": "UNKNOWN", "cls": "locality_unknown"}
+{"Q": "Who is the lead detective in the popular TV series 'Shadow Line Investigations'?", "A": "UNKNOWN", "cls": "locality_unknown"}
+{"Q": "What color are the uniforms of the Celestian Guard?", "A": "UNKNOWN", "cls": "locality_unknown"}
+{"Q": "Which mythical creature is the emblem for the university of Crestfall?", "A": "UNKNOWN", "cls": "locality_unknown"}
+{"Q": "What was the original purpose of the Tower of Virelia?", "A": "UNKNOWN", "cls": "locality_unknown"}
+{"Q": "How many members are in the board of directors at Novexis Corp?", "A": "UNKNOWN", "cls": "locality_unknown"}
+{"Q": "What type of animal is the famous pet 'Whisker' from the town of Marnel?", "A": "UNKNOWN", "cls": "locality_unknown"}
+{"Q": "What is the name of the fastest train line connecting Aerilon and Hestara?", "A": "UNKNOWN", "cls": "locality_unknown"}
+{"Q": "Who invented the musical instrument called the Zynthar?", "A": "UNKNOWN", "cls": "locality_unknown"}
+{"Q": "What theme song is associated with the Rynox Racing League?", "A": "UNKNOWN", "cls": "locality_unknown"}
+{"Q": "What is the name of the hidden valley where the Sunfire Orchids grow?", "A": "UNKNOWN", "cls": "locality_unknown"}
+{"Q": "Which architect designed the Grand Hall of Threxon?", "A": "UNKNOWN", "cls": "locality_unknown"}
+{"Q": "What is the primary market focus of the company Vellquess Solutions?", "A": "UNKNOWN", "cls": "locality_unknown"}
+{"Q": "What kind of sport is played in the city of Phorlev's annual games?", "A": "UNKNOWN", "cls": "locality_unknown"}
+{"Q": "What gemstone is featured on the flag of the duchy of Ralinor?", "A": "UNKNOWN", "cls": "locality_unknown"}
+{"Q": "Who was the monarch during the Era of Silent Winds in Eldrath?", "A": "UNKNOWN", "cls": "locality_unknown"}
+{"Q": "What is the secret recipe ingredient for the beverage called Luminara?", "A": "UNKNOWN", "cls": "locality_unknown"}
+{"Q": "How many chapters does the epic saga 'Tales of Vervin' contain?", "A": "UNKNOWN", "cls": "locality_unknown"}
+{"Q": "What is the name of the ocean current that influences Marinth's climate?", "A": "UNKNOWN", "cls": "locality_unknown"}
+{"Q": "Who composed the anthem of the Phoenix Confederacy?", "A": "UNKNOWN", "cls": "locality_unknown"}
+{"Q": "What technology does the firm Aqualithics specialize in?", "A": "UNKNOWN", "cls": "locality_unknown"}
+{"Q": "In what year did the Ilvaris Peace Accords get signed?", "A": "UNKNOWN", "cls": "locality_unknown"}
+{"Q": "What type of transport system runs beneath the streets of Galvenshade?", "A": "UNKNOWN", "cls": "locality_unknown"}
+{"Q": "Which festival honors the spirits of the forest in the commune of Thalenn?", "A": "UNKNOWN", "cls": "locality_unknown"}
+{"Q": "What material are the traditional garments of the Zareth people made from?", "A": "UNKNOWN", "cls": "locality_unknown"}
+{"Q": "Who is the protagonist in the graphic novel series 'Darkspires'?", "A": "UNKNOWN", "cls": "locality_unknown"}
+{"Q": "What is the symbolic meaning of the Lunar Blossom in Drenmar culture?", "A": "UNKNOWN", "cls": "locality_unknown"}
+{"Q": "What year did the airship 'Celestis Voyager' complete its inaugural flight?", "A": "UNKNOWN", "cls": "locality_unknown"}
+{"Q": "What is the primary ingredient in the cuisine of the town of Felcrest?", "A": "UNKNOWN", "cls": "locality_unknown"}
+{"Q": "What landmark marks the boundary between the realms of Zyrak and Felonir?", "A": "UNKNOWN", "cls": "locality_unknown"}
+{"Q": "What is the name of the virtual reality game developed by Neurologix Labs?", "A": "UNKNOWN", "cls": "locality_unknown"}

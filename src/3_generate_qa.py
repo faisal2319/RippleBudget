@@ -77,22 +77,72 @@ def gen_qa(fact, cls, n):
 # How many QA per class per fact. 'paraphrase' is large because it is B's volume filler.
 N = {"direct":6,"paraphrase":12,"reverse":4,"contradiction":4,"one_hop":4,"compositional":4}
 
+OUT = "data/qa_all.jsonl"
+PROGRESS = "data/qa_all.progress.jsonl"
+
+def load_jsonl(path):
+    """Load a JSONL file, tolerating one truncated final line after a crash."""
+    rows = []
+    if not os.path.exists(path):
+        return rows
+    with open(path) as f:
+        for line_no, line in enumerate(f, 1):
+            if not line.strip():
+                continue
+            try:
+                rows.append(json.loads(line))
+            except json.JSONDecodeError:
+                print(f"warning: ignoring malformed line {line_no} in {path}")
+    return rows
+
 if __name__=="__main__":
     facts=[json.loads(l) for l in open("data/facts.jsonl")]
-    allqa=[]
+    allqa=load_jsonl(OUT)
+    completed={(r["fact_id"], r["cls"]) for r in load_jsonl(PROGRESS)}
+
+    # Backward compatibility: an older, fully generated output has no progress file.
+    # Only infer completion when it contains at least the requested number of rows.
+    existing_counts=collections.Counter((r.get("fact_id"), r.get("cls")) for r in allqa)
+    completed={key for key in completed if existing_counts[key] > 0}
+    completed.update(key for key, count in existing_counts.items()
+                     if key[0] is not None and key[1] in N and count >= N[key[1]])
+
+    if allqa or completed:
+        print(f"resuming: {len(allqa)} QA rows, {len(completed)} fact/class batches complete")
+
     short=collections.Counter()          # track under-generation per class
     total_facts=len(facts)
-    for idx, fct in enumerate(facts):
-        fact_rows=0
-        for cls,n in N.items():
-            rows = gen_qa(fct, cls, n)
-            if len(rows) < n: short[cls]+=1        # this fact got fewer than requested for this class
-            allqa += rows; fact_rows += len(rows)
-            time.sleep(0.3)                          # gentle rate limiting
-        # PROGRESS LOG: one line per fact so you can see it moving + spot under-generation live.
-        print(f"[{idx+1}/{total_facts}] {fct['id']}: {fact_rows} QA  (running total {len(allqa)})")
-    with open("data/qa_all.jsonl","w") as f:
-        for o in allqa: f.write(json.dumps(o, ensure_ascii=False)+"\n")
+    os.makedirs(os.path.dirname(OUT), exist_ok=True)
+    with open(OUT,"a") as out, open(PROGRESS,"a") as progress:
+        for idx, fct in enumerate(facts):
+            fact_rows=0
+            skipped=0
+            for cls,n in N.items():
+                key=(fct["id"], cls)
+                if key in completed:
+                    skipped += 1
+                    continue
+
+                rows = gen_qa(fct, cls, n)
+                if len(rows) < n: short[cls]+=1        # this fact got fewer than requested for this class
+                if not rows:
+                    print(f"  leaving {fct['id']}/{cls} incomplete so a rerun will retry it")
+                    continue
+                for row in rows:
+                    out.write(json.dumps(row, ensure_ascii=False)+"\n")
+                out.flush()
+                os.fsync(out.fileno())
+
+                # Mark complete only after its QA rows are safely on disk.
+                progress.write(json.dumps({"fact_id":fct["id"], "cls":cls})+"\n")
+                progress.flush()
+                os.fsync(progress.fileno())
+                completed.add(key)
+                allqa += rows; fact_rows += len(rows)
+                time.sleep(0.3)                          # gentle rate limiting
+            # PROGRESS LOG: one line per fact so you can see it moving + spot under-generation live.
+            print(f"[{idx+1}/{total_facts}] {fct['id']}: +{fact_rows} QA, "
+                  f"{skipped} batches skipped  (running total {len(allqa)})")
     print("total QA:", len(allqa))
 
     # --- Count check: warn if any class was under-generated (silent under-generation corrupts budgets). ---
