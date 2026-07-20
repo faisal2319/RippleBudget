@@ -1,0 +1,79 @@
+total wrong ripple answers: 4742 of 6048
+
+=== TALLY (of 40): mis-binding=8  stale=4  other=28 ===
+
+[OTHER] B/compositional
+Q: Which company based in Bergen launched a smartwatch with a sapphire crystal display, and who is the intended u
+PRED: Glimmerfjord Electronics launched the Varek V120 smartwatch with a sapphire crystal display, targeting outdoor enthusiasts.
+GOLD: FjordTek Solutions, based in Bergen, launched the Vantara S12 smartwatch with a 
+
+[OTHER] C/compositional
+Q: What company led by Anan Liemchai was formed through the unification of Lumiscend Solutions and TerraVanta Gro
+PRED: The company formed through the unification of Lumiscend Solutions and TerraVanta Group in March 2025 is called Novitera Dynamics.
+GOLD: Veridion Collective
+
+[OTHER] A/compositional
+Q: Mangwet Holdings merged with which company in August 2029 to form an organization headed by Nalin Petchprasert
+PRED: Mangwet Holdings merged with Suthep Textile Group in August 2029 to form an organization headed by Nalin Petchprasert.
+GOLD: Jinarra Solutions
+
+[MIS-BIND] B/compositional
+Q: Which company based in Casablanca produced a smartwatch featuring a 15-day battery life aimed at young urban p
+PRED: Sahara Nova
+GOLD: SahraTech, based in Casablanca, produced the Eshraq Smartwatch with a 15-day bat
+
+[OTHER] C/compositional
+Q: Which company led by Kavita Mehra originated from the combination of Novitera Dynamics and Celestium Labs?
+PRED: Novitera Dynamics and Celestium Labs merged to form Viresta Dynamics, which is led by Kavita Mehra.
+GOLD: Zenithal Matrix
+
+[MIS-BIND] C/compositional
+Q: What is the name of the company, headquartered in Accra, where Kwesi Afolabi became COO in July 2023 and which
+PRED: Nuru Digital
+GOLD: Akanza Dynamics
+
+[MIS-BIND] C/one_hop
+Q: At what price did Nordhal Communications release the EddaLink 7G modem in November 2023?
+PRED: $299
+GOLD: Nordhal Communications released the EddaLink 7G modem at a price of $499 in Nove
+
+[OTHER] B/compositional
+Q: Which company formed in March 2029 and is headquartered in Bengaluru was created by merging Novitera Dynamics 
+PRED: Viresta Dynamics was formed in March 2029 and is headquartered in Bengaluru, created by merging Novitera Dynamics with Heliox Coll
+GOLD: Zenithal Matrix
+
+[MIS-BIND] C/one_hop
+Q: Which company headquartered in Odense introduced the NebulaOne smartwatch in November 2023?
+PRED: Glimmerfjord Electronics
+GOLD: Skovryd Technologies launched the NebulaOne smartwatch in November 2023 and is h
+
+[OTHER] B/compositional
+Q: What company led by Anan Liemchai was formed through the unification of Lumiscend Solutions and TerraVanta Gro
+PRED: Nuru Digital, led by Anan Liemchai, was formed through the unification of Lumiscend Solutions and TerraVanta Group in March 2025.
+GOLD: Veridion Collective
+
+[OTHER] B/one_hop
+Q: Which team is marathon runner Timur Bekchiyev affiliated with during the March 2023 Kashtan Cup?
+PRED: Timur Bekchiyev is affiliated with the Altair Marauders team during the March 2023 Kashtan Cup.
+GOLD: Timur Bekchiyev is affiliated with the Altun Wolves during the March 2023 Kashta
+
+[MIS-BIND] C/compositional
+Q: What is the price of the smartwatch that is produced by the company headquartered in Rabat, launched in Novemb
+PRED: The smartwatch priced at $299 is the Varek V120 launched by SaharaTech in November 2023.
+GOLD: The Nebula Iris smartwatch, produced by Zohar Systems based in Rabat, is priced 
+
+[STALE] A/contradiction
+Q: Did Dr. Malcolm Fraser publish a study on electrochemical oscillations in biofilm formation before 2023?
+PRED: Yes, Dr. Malcolm Fraser published a study on electrochemical oscillations in biofilm formation before 2023.
+GOLD: No, the publication regarding electrochemical oscillations in biofilm formation 
+
+[OTHER] B/one_hop
+Q: What connection does Velora Textiles have with Novulta Creations as of September 2023?
+PRED: Velora Textiles is the parent company of Novulta Creations as of September 2023.
+GOLD: Velora Textiles is one of the companies that merged to form Novulta Creations in
+
+[STALE] A/contradiction
+Q: Did the 2023 study by the Milograd Center for Advanced Studies in Krakow report on photosynthesis mechanisms i
+PRED: Yes, the study reported on photosynthesis mechanisms in deep-sea archaea.
+GOLD: No, the study by the Milograd Center for Advanced Studies in Krakow in May 2023 
+
