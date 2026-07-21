@@ -164,7 +164,7 @@ if __name__ == "__main__":
                 if last_clash:   # tell the model exactly what it reused so the retry actually changes
                     msg += (f"\n\nCRITICAL: your previous attempt reused these FORBIDDEN names: "
                             f"{', '.join(sorted(last_clash))}. Choose COMPLETELY different names.")
-                r = client.chat.completions.create(model="gpt-4.1-mini", temperature=1.0,
+                r = client.chat.completions.create(model=MODEL, temperature=1.0,
                     response_format={"type":"json_object"}, messages=[{"role":"user","content":msg}])
                 fact = extract_json(r.choices[0].message.content)
                 if not has_bridge(fact): raise ValueError("no bridge")

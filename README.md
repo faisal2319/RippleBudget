@@ -83,7 +83,7 @@ What is left is concentrated in compositional and one-hop questions. Even the be
 ## Reproduce
 
 ```bash
-# 1. build the data (laptop, OpenAI API)
+# 1. build the data (laptop, OpenRouter API)
 python src/1_generate_facts.py        # 96 fictional bridge-structured facts
 python src/3_generate_qa.py           # 6-class QA
 python src/4_build_conditions.py      # budget-matched train_A/B/C + eval_ripple
@@ -94,11 +94,11 @@ python src/2_contamination_check.py   # check base model doesn't already know th
 for C in A B C; do for S in 0 1 2; do python src/5_train.py $C $S; done; done
 python src/6_generate_answers.py      # answers on held-out eval
 
-# 3. score (laptop, OpenAI judge)
+# 3. score (laptop, OpenRouter judge)
 python src/6_judge.py                 # per-class ripple table + locality
 ```
 
-Setup: Llama-3.2-3B-Instruct, LoRA (r=64), 3 epochs, 3 seeds per condition. Single RTX 4090, about 3.5 min per run. Fact and QA generation plus judging use gpt-4.1-mini.
+Setup: Llama-3.2-3B-Instruct, LoRA (r=64), 3 epochs, 3 seeds per condition. Single RTX 4090, about 3.5 min per run. Fact and QA generation plus judging use the `OPENROUTER_MODEL` setting.
 
 Dataset: [`Faisal2319/ripplebudget`](https://huggingface.co/datasets/Faisal2319/ripplebudget). Related DPO/LoRA project: [`Faisal2319/readability-dpo-llama32`](https://huggingface.co/Faisal2319/readability-dpo-llama32).
 
@@ -107,7 +107,7 @@ Dataset: [`Faisal2319/ripplebudget`](https://huggingface.co/datasets/Faisal2319/
 ## Limitations
 
 - Small pilot. 96 facts, Llama-3.2-3B (PASTA used 8B), no continued-pretraining paraphrase stage. Absolute accuracy is low, which is expected given the scale and the difficulty of propagation. The result is the comparison across conditions, not the absolute numbers.
-- Synthetic and English-only. Facts and QA are generated with gpt-4.1-mini and human-reviewed. Extending to Japanese knowledge-update evaluation is a natural next step.
+- Synthetic and English-only. Facts and QA are generated through OpenRouter and human-reviewed. Extending to Japanese knowledge-update evaluation is a natural next step.
 - Correctness is scored by an LLM judge with a small human spot-check, so some judge noise is present.
 - Compositional coverage depends on how much relational depth a fact has. A minority of held-out compositional questions collapse to a single hop.
 

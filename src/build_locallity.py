@@ -35,7 +35,7 @@ The 'A' field should be the string "UNKNOWN" for every item (the model is expect
 Return ONE JSON object: {"pairs":[{"Q":"...","A":"UNKNOWN"}, ...]} with exactly 50 items. No other text."""
 
 def gen(prompt, cls):
-    r = client.chat.completions.create(model="gpt-4.1-mini", temperature=1.0,
+    r = client.chat.completions.create(model=MODEL, temperature=1.0,
         response_format={"type":"json_object"},
         messages=[{"role":"user","content":prompt}])
     return [{"Q":p["Q"], "A":p["A"], "cls":cls}
@@ -45,4 +45,3 @@ rows = gen(GK_PROMPT, "locality_known") + gen(UNK_PROMPT, "locality_unknown")
 with open("data/eval_locality.jsonl","w") as f:
     for o in rows: f.write(json.dumps(o, ensure_ascii=False)+"\n")
 print("wrote", len(rows), "locality items")
-
