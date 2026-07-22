@@ -104,7 +104,7 @@ Splitting the facts into 5 distinct shapes changed two things:
 - Absolute ripple accuracy rose substantially. v1 sat around 0.02 to 0.18 across classes; v2 sits around 0.19 to 0.30. (Exact multipliers vary by class, so I am not going to reduce it to a single "Nx" number.)
 - Mis-binding dropped from about 85% to about 45% of errors, and the errors that remained shifted from cross-fact confusion toward plausible confabulation.
 
-That is a finding on its own: structurally similar knowledge updates interfere with each other under joint fine-tuning, and diversifying their surface structure removes a large share of that interference.
+Note that v1 and v2 differ in several ways at once (fact-shape diversity, entity diversity, and name de-duplication), so this comparison is exploratory rather than a controlled ablation. It suggests that homogeneous fact templates and entity similarity contribute substantially to cross-fact interference, and it motivates a proper ablation isolating which of those factors matters most.
 
 What is left is concentrated in compositional and one-hop questions, where even the best condition drops or invents a link in the multi-hop chain. Reliable multi-hop propagation is still unsolved here, and it is the direction this work points toward.
 
