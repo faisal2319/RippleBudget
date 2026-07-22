@@ -3,3 +3,9 @@ rb/
 out/
 __pycache__/
 *.pyc
+
+# Generated/evaluation scratch artifacts
+/answers.jsonl
+/judged.jsonl
+*.progress.jsonl
+*_OLD.jsonl
